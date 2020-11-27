@@ -253,7 +253,7 @@ public class StaffWeddingEventDemo extends WeddingEventDemo {
      */
     public static String askUserForIDNum() {
         System.out.print("Enter Identification Number: ");
-        return input.next();
+        return input.nextLine();
     }
 
     /**
@@ -263,7 +263,7 @@ public class StaffWeddingEventDemo extends WeddingEventDemo {
      */
     public static String askUserForFirstName() {
         System.out.print("Enter First Name: ");
-        return input.next();
+        return input.nextLine();
     }
 
     /**
@@ -273,7 +273,7 @@ public class StaffWeddingEventDemo extends WeddingEventDemo {
      */
     public static String askUserForLastName() {
         System.out.print("Enter Last Name: ");
-        return input.next();
+        return input.nextLine();
     }
 
     /**
@@ -289,7 +289,7 @@ public class StaffWeddingEventDemo extends WeddingEventDemo {
         }
         catch(Exception e) {
             System.out.println("You've entered a non-numerical value, please try again");
-            askUserForPayRate();
+            payRate = askUserForPayRate();
         }
         return payRate;
     }

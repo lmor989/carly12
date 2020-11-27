@@ -56,7 +56,7 @@ public class EventDemo {
         }
         catch(Exception e) {
             System.out.println("You've entered a non-numerical value for the number of guests, please try again");
-            askUserForGuests();
+            guests = askUserForGuests();
         }
         return guests;
     }
@@ -75,7 +75,7 @@ public class EventDemo {
         }
         catch(Exception e) {
            System.out.println("You've selected a non-numerical value for the event type, please try again");
-           askUserForEventType();
+           num = askUserForEventType();
         }
         return num;
     }

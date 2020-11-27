@@ -140,7 +140,7 @@ public class WeddingEventDemo extends EventDemo {
         }
         catch(Exception e) {
             System.out.println("You've entered a non-numerical value for your appetizer choice, please try again");
-            askUserForAppetizer();
+            num = askUserForAppetizer();
         }
         return num;
     }
@@ -159,7 +159,7 @@ public class WeddingEventDemo extends EventDemo {
         }
         catch(Exception e) {
             System.out.println("You've entered a non-numerical value for your first entree, please try again");
-            askUserForEntree1();
+            num = askUserForEntree1();
         }
         return num;
     }
@@ -178,7 +178,7 @@ public class WeddingEventDemo extends EventDemo {
         }
         catch(Exception e) {
             System.out.println("You've entered a non-numerical value for your second entree, please try again");
-            askUserForEntree2();
+            num = askUserForEntree2();
         }
         return num;
     }
@@ -196,8 +196,8 @@ public class WeddingEventDemo extends EventDemo {
             num = Integer.parseInt(input.nextLine());
         }
         catch(Exception e) {
-            System.out.println("You've entered a non-numerical value for your first entree, please try again");
-            askUserForDessert();
+            System.out.println("You've entered a non-numerical value for your dessert, please try again");
+            num = askUserForDessert();
         }
         return num;
     }
